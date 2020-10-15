@@ -4,7 +4,6 @@ let age = 0;
 var adress = "";
 var country = "";
 var storeInfo = [];
-let i;
 
 
 //Maybe loop?
