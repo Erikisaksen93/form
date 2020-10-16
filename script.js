@@ -3,40 +3,38 @@ var lastName = "";
 let age = 0;
 var adress = "";
 var country = "";
-var storeInfo = [];
+var storeFname = [];
+var storeLname = [];
+var storeAge = [];
+var storeAdress = [];
+var storeCountry = [];
 
 
-//Maybe loop?
 function getData() {
 
 firstName = document.getElementById('fname').value;
-storeInfo.push(firstName);
+storeFname.push(firstName);
 
 lastName = document.getElementById('lname').value;
-storeInfo.push(lastName);
+storeLname.push(lastName);
 
 age = document.getElementById('age').value;
-storeInfo.push(age);
+storeAge.push(age);
 
 adress = document.getElementById('adress').value;
-storeInfo.push(adress);
+storeAdress.push(adress);
 
 country = document.getElementById('country').value;
-storeInfo.push(country);
+storeCountry.push(country);
 
 
-//output will always be the same array[x]?? FIXED
-
-document.getElementById('output_fname').innerHTML +=storeInfo[0] + ", ";
-document.getElementById('output_lname').innerHTML += storeInfo[1] + ", ";
-document.getElementById('output_age').innerHTML += storeInfo[2] + ", ";
-document.getElementById('output_adress').innerHTML += storeInfo[3] + ", ";
-document.getElementById('output_countries').innerHTML += storeInfo[4] + ", ";
-
-storeInfo.length = 0;
+document.getElementById('output_fname').innerHTML = storeFname + ", ";
+document.getElementById('output_lname').innerHTML = storeLname + ", ";
+document.getElementById('output_age').innerHTML = storeAge + ", ";
+document.getElementById('output_adress').innerHTML = storeAdress + ", ";
+document.getElementById('output_countries').innerHTML = storeCountry + ", ";
 
 
-//Must be a better way to clear all the boxes.
 document.getElementById('fname').value = "";
 document.getElementById('lname').value = "";
 document.getElementById('age').value = "";
